@@ -57,8 +57,12 @@ body {
 }
 
 header {
-  background-color: var(--background-2);
+  background-color: #30475ECC;
   padding: 20px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 header h1 {

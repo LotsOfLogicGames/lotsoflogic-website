@@ -5,8 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity Web Player | InfectedDawn</title>
   </head>
-  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
+  <body style="height: 100%; margin: 0; padding: 0; overflow: hidden;">
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+      <div></div>
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20;"></canvas>
+      <div></div>
+    </div>
     <script src="Build/InfectedDawnWebTest.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {

@@ -3,14 +3,34 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | InfectedDawn</title>
+    <title>Infected Dawn Demo (VERY BUGGY)</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body style="height: 100%; margin: 0; padding: 0; overflow: hidden;">
-    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-      <div></div>
-      <canvas id="unity-canvas" width=1280 height=720 tabindex="-1" style="width: 1280px; height: 720px; background: #231F20;"></canvas>
-      <div></div>
+  <body>
+
+
+    <div class="content-container">
+      <h1>Infected Dawn</h1>
+      <div class="game-layout">
+        <div class="instructions">
+          <h2 style="margin: auto; text-align: center; margin-bottom: 1rem;">How to Play</h2>
+          <ul>
+            <li><strong>WASD</strong> - Move</li>
+            <li><strong>Mouse</strong> - Look Around</li>
+            <li><strong>Left Click</strong> - Grab & Throw Objects</li>
+            <li><strong>Right Click</strong> - Drop Held Object</li>
+            <li><strong>E</strong> - Interact</li>
+            <li><strong>Tab / Space / I</strong> - Open Inventory</li>
+          </ul>
+        </div>
+        <div class="unity-container">
+          <canvas id="unity-canvas" width="960" height="600" tabindex="-1"></canvas>
+        </div>
+      </div>
+      <p>Enjoy the demo? Play the full game on Steam: STEAM LINK GOES HERE</p>
     </div>
+
+
     <script src="Build/InfectedDawnWebTest.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -23,23 +43,28 @@
         var canvas = document.querySelector("#unity-canvas");
         canvas.style.width = "100%";
         canvas.style.height = "100%";
-        canvas.style.position = "fixed";
+        canvas.style.position = "relative";
 
         document.body.style.textAlign = "left";
       }
 
-      createUnityInstance(document.querySelector("#unity-canvas"), {
+      var unityInstance = null;
+
+      window.unityInstance = createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
         dataUrl: "Build/InfectedDawnWebTest.data.unityweb",
         frameworkUrl: "Build/InfectedDawnWebTest.framework.js.unityweb",
         codeUrl: "Build/InfectedDawnWebTest.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "InfectedDawn",
-        productVersion: "0.1.0",
+        companyName: "LotsOfLogicSoftware",
+        productName: "Infected Dawn",
+        productVersion: "1.0.0",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      });
+      }).then((instance) => {
+          unityInstance = instance;
+          console.log("[Unity] Instance created");
+      });;
     </script>
   </body>
 </html>

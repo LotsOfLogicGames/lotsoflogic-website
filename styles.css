@@ -1,0 +1,96 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #231F20;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Container for the title, game, and paragraph */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Game layout to position the instructions and Unity game */
+.game-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1700px;
+    position: relative;
+}
+
+/* Instructions panel */
+.instructions {
+    width: 250px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Style for the instructions title */
+.instructions h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Title styling */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* List styling */
+.instructions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.instructions li {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Unity game container */
+.unity-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Unity canvas styling */
+#unity-canvas {
+    max-width: 100%;
+    max-height: 100%;
+    background: #231F20;
+    outline: none; /* Removes focus outline */
+    border-radius: 0.5rem;
+}
+
+/* Paragraph styling */
+p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    max-width: 800px;
+}

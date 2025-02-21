@@ -83,8 +83,8 @@ h1 {
 #unity-canvas {
     max-width: 100%;
     max-height: 100%;
-    width: 1000px;
-    height: 563px;
+    width: 53%;
+    aspect-ratio: 16/9;
     background: #231F20;
     outline: none; /* Removes focus outline */
     border-radius: 0.5rem;

@@ -1,0 +1,30 @@
+let unityInstance = null;
+
+        document.getElementById("play-button").addEventListener("click", function() {
+            document.getElementById("unity-container").style.display = "block";
+
+            createUnityInstance(document.querySelector("#unity-canvas"), {
+                dataUrl: "Build/InfectedDawnWebTest.data.unityweb",
+                frameworkUrl: "Build/InfectedDawnWebTest.framework.js.unityweb",
+                codeUrl: "Build/InfectedDawnWebTest.wasm.unityweb",
+                streamingAssetsUrl: "StreamingAssets",
+                companyName: "LotsOfLogicGames",
+                productName: "Infected Dawn",
+                productVersion: "1.0.0"
+            }).then((instance) => {
+                unityInstance = instance;
+                console.log("[Unity] Instance created");
+            });
+        });
+
+        document.getElementById("close-button").addEventListener("click", function() {
+            if (unityInstance) {
+                unityInstance.Quit().then(() => {
+                    console.log("[Unity] Instance destroyed");
+                    unityInstance = null;
+                    document.getElementById("unity-container").style.display = "none";
+                });
+            } else {
+                document.getElementById("unity-container").style.display = "none";
+            }
+        });

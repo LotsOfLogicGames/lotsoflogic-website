@@ -13,6 +13,8 @@ let unityInstance = null;
                 companyName: "LotsOfLogicGames",
                 productName: "Infected Dawn",
                 productVersion: "1.0.0"
+            }, (progress) => {
+                console.log(`[Unity] Loading progress: ${Math.round(progress * 100)}%`);
             }).then((instance) => {
                 unityInstance = instance;
                 console.log("[Unity] Instance created");

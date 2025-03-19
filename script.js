@@ -19,6 +19,7 @@ let unityInstance = null;
             }).then((instance) => {
                 unityInstance = instance;
                 console.log("[Unity] Instance created");
+                document.getElementById("loading-text").style.display = "none";
             });
         });
 

@@ -15,6 +15,7 @@ let unityInstance = null;
                 productVersion: "1.0.0"
             }, (progress) => {
                 console.log(`[Unity] Loading progress: ${Math.round(progress * 100)}%`);
+                document.getElementById("loading-text").textContent = `Loading: ${Math.round(progress * 100)}%`;
             }).then((instance) => {
                 unityInstance = instance;
                 console.log("[Unity] Instance created");

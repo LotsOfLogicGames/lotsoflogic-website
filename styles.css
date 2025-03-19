@@ -89,6 +89,15 @@ button {
     aspect-ratio: 16/9;
 }
 
+#loading-text {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #close-button {
     position: absolute;
     top: 20px;

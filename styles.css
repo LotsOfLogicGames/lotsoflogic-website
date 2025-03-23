@@ -89,15 +89,6 @@ button {
     aspect-ratio: 16/9;
 }
 
-#loading-text {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 #close-button {
     position: absolute;
     top: 20px;
@@ -122,19 +113,15 @@ button {
     width: 250px;
 }
 
-ul {
-    list-style: none;
+#loading-text {
+    position: absolute;
     padding: 0;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-a {
-    color: rgb(235, 235, 235);
-}
-
-footer {
-    margin-top: 3rem;
-    color: rgb(145, 145, 145);
-}
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 #instructions::-webkit-scrollbar {

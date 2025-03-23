@@ -127,3 +127,17 @@ button {
 #instructions::-webkit-scrollbar {
     display: none;
   }
+
+  ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: rgb(235, 235, 235);
+}
+
+footer {
+    margin-top: 3rem;
+    color: rgb(145, 145, 145);
+}

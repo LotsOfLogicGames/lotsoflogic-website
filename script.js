@@ -7,7 +7,7 @@ document.getElementById("play-button").addEventListener("click", function() {
     document.getElementsByTagName("body")[0].style.overflowY = "hidden";
 
     createUnityInstance(document.querySelector("#unity-canvas"),{
-        dataUrl: "Build/InfectedDawnWebTest.data.unityweb",
+        dataUrl: ["Build/InfectedDawnWebTest.data.unityweb.1", "Build/InfectedDawnWebTest.data.unityweb.2"],
         frameworkUrl: "Build/InfectedDawnWebTest.framework.js.unityweb",
         codeUrl: "Build/InfectedDawnWebTest.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",

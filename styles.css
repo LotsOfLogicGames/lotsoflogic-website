@@ -16,6 +16,10 @@ h2 {
     margin-top: 5rem;
 }
 
+p {
+    text-align: left;
+}
+
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -24,29 +28,29 @@ h2 {
     display: flex;
     flex-direction: column;
 
-    align-items: center;
+    align-items: start;
 }
 
 .screenshots {
-    display: grid;
+    display: flex;
     width: 100%;
     max-width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
+    
+    justify-content: left;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .screenshots img {
     margin: 5px;
     border-radius: 10px;
-    height: 200px;
+    height: 150px;
 }
 
 button {
     padding: 10px 20px;
     width: 300px;
     font-size: 16px;
-    margin: 10px;
     cursor: pointer;
 
     display: flex;
@@ -131,6 +135,7 @@ button {
   ul {
     list-style: none;
     padding: 0;
+    text-align: left;
 }
 
 a {

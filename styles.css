@@ -13,6 +13,7 @@ hr {
 }
 
 h2 {
+    margin: auto;
     margin-top: 5rem;
 }
 
@@ -143,6 +144,7 @@ a {
 }
 
 footer {
+    margin: auto;
     margin-top: 3rem;
     color: rgb(145, 145, 145);
 }

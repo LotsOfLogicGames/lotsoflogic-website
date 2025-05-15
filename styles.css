@@ -12,8 +12,11 @@ hr {
     opacity: 25%;
 }
 
-h2 {
+h1 {
     margin: auto;
+}
+
+h2 {
     margin-top: 5rem;
 }
 

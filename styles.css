@@ -124,7 +124,27 @@ button:hover {
     border-radius: 4px;
 }
 #close-button:hover {
-        background: linear-gradient(130deg, #ff3c3c, #e71e1e);
+    background: linear-gradient(130deg, #ff3c3c, #e71e1e);
+}
+
+#fullscreenToggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: black;
+    border: none;
+
+    background: linear-gradient(130deg, #dadada, #a7a7a7);
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #c7c7c7;
+
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+
+    border-radius: 4px;
+}
+#fullscreenToggle:hover {
+    background: linear-gradient(130deg, #ffffff, #dfdfdf);
+    cursor:pointer;
 }
 
 #instructions {

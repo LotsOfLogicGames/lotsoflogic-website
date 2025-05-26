@@ -20,6 +20,7 @@ document.getElementById("play-button").addEventListener("click", function() {
     }).then((instance) => {
         unityInstance = instance;
         console.log("[Unity] Instance created");
+        document.getElementById("fullscreenToggle").style.display = "block";
         document.getElementById("loading-text").style.display = "none";
     });
 
@@ -38,4 +39,6 @@ document.getElementById("close-button").addEventListener("click", function() {
     } else {
         document.getElementById("unity-container").style.display = "none";
     }
+
+    document.getElementById("fullscreenToggle").style.display = "none";
 });

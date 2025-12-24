@@ -24,7 +24,31 @@ p {
     text-align: left;
 }
 
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar > ul > li{
+    margin:auto;
+    padding:1rem;
+}
+.navbar > ul > li > a:link{
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline !important;
+}
+
+iframe {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .container {
+    min-width: 675px;
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;

@@ -71,6 +71,12 @@ iframe {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+.yt-vid {
+    border-radius: 1rem;
+    box-shadow: 4px 4px 10px black;
+}
+
 .image-button > img {
     border-radius: 1rem;
     box-shadow: 0px 0px 10px black;

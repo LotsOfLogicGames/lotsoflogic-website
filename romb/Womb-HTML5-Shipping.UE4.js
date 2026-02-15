@@ -280,7 +280,7 @@ function detectWebGL() {
 		for(var failIfMajorPerformanceCaveat = 1; failIfMajorPerformanceCaveat >= 0; --failIfMajorPerformanceCaveat) {
 			for(var i in names) {
 				try {
-					var context = canvas.getContext(names[i], {antialias:false,alpha:false,depth:true,stencil:true,failIfMajorPerformanceCaveat:!!failIfMajorPerformanceCaveat});
+					var context = canvas.getContext(names[i], {antialias:true,alpha:false,depth:true,stencil:true,failIfMajorPerformanceCaveat:!!failIfMajorPerformanceCaveat});
 					Module['preinitializedWebGLContext'] = context;
 					Module['softwareWebGL'] = !failIfMajorPerformanceCaveat;
 					if (context && typeof context.getParameter == "function") {
